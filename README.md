@@ -1,5 +1,6 @@
 # Date, Romanized
-Simple app to get date (US format) with roman numerals in place of standard numbers
+* app/function to get date (US format) with roman numerals in place of standard numbers
+* no link. just copy code.
 
 — example: DECEMBER XXIII, MMXIX
 
