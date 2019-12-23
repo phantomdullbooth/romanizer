@@ -4,7 +4,7 @@ $(() => {
       const numeralOnes = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
       const numeralTens = ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC']
 
-
+      // RETURN DIGITS FOR DATE AND LAST TWO OF YEAR AS ROMAN
       const romanizeDigits = (number) => {
             const digits = number.toString().split('');
             let splitDigits;
@@ -23,20 +23,18 @@ $(() => {
             return romanizedDate
       }
 
+      // RETURN COMPLETE DATE
       const getDate = () => {
-
-            const functionalTime = new Date()
-            const month = functionalTime.getMonth()
-            const date = functionalTime.getDate()
-            const year = functionalTime.getFullYear()
+            const thisDate = new Date()
+            const month = thisDate.getMonth()
+            const date = thisDate.getDate()
+            const year = thisDate.getFullYear()
 
             return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
       }
 
-      const $romanDate = $('<h4>').text(getDate()).appendTo('main')
-
+      const $romanDate = $('<h1>').text(getDate()).appendTo('main')
 
 })
 
-// i like music
-// check out 'Chilly Wonka' by Melodysheep
+// i like music. check out 'Up in Flames' by Years & Years
