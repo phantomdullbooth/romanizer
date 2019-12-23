@@ -4,4 +4,4 @@ Simple app to get date (US format) with roman numerals in place of standard numb
 — example: DECEMBER XXIII, MMXIX
 
 #### Notes
-* I like Jupiter; uses IV for 4 instead of less conventional IIII
+* Uses IV for 4. Isn't that the standard way of writing 4? Yes, but it's also the symbol for Jupiter, so sometimes you might see IIII instead. I like Jupiter. I like the number 4. No need IV change.
