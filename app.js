@@ -1,5 +1,7 @@
 $(() => {
 
+      console.log('i like music. check out \'Up in Flames\' by Years & Years')
+
       const months = ['Ianuarius', 'Februarius', 'Martius', 'Aprilis', 'Maius', 'Iunius', 'Iulius', 'Augustus', 'September', 'October', 'November', 'December']
       const numeralOnes = ['I', 'II', 'III', 'IV', 'V', 'VI', 'VII', 'VIII', 'IX']
       const numeralTens = ['X', 'XX', 'XXX', 'XL', 'L', 'LX', 'LXX', 'LXXX', 'XC']
@@ -34,7 +36,4 @@ $(() => {
       }
 
       const $romanDate = $('<h1>').text(getDate()).appendTo('main')
-
 })
-
-// i like music. check out 'Up in Flames' by Years & Years
