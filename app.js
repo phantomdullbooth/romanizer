@@ -21,7 +21,12 @@ $(() => {
             }
         } else if (digits.length === 2) {
             splitDigits = digits
-            romanizedDate = numeralTens[parseInt(splitDigits[0]) - 1] + numeralOnes[parseInt(splitDigits[1]) - 1]
+
+            if (parseInt(splitDigits[1]) === 0) {
+                romanizedDate = numeralTens[parseInt(splitDigits[0]) - 1]
+            } else if (parseInt(splitDigits[1]) !== 0) {
+                romanizedDate = numeralTens[parseInt(splitDigits[0]) - 1] + numeralOnes[parseInt(splitDigits[1]) - 1]
+            }
         } else if (digits.length === 1) {
             romanizedDate = numeralOnes[number - 1]
         }
