@@ -1,0 +1,15 @@
+/* =================================== # FOOTER */
+/* =================================== # FOOTER */
+
+header, footer, #password {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+header, footer {
+    width: 100%;
+    text-align: center;
+    line-height: 150%;
+}
