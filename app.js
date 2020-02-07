@@ -40,9 +40,7 @@ $(() => {
         const date = thisDate.getDate()
         const year = thisDate.getFullYear()
 
-        if (format === 'US') {
-            return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
-        } else if (format === 'UK') {
+        if (format === 'UK') {
             return romanizeDigits(date) + ' ' + months[month] + ' MM' + romanizeDigits(year)
         } else {
             return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
@@ -53,7 +51,7 @@ $(() => {
 
     // CHANGE DATA FORMATS
     const $formats = $('<div>').addClass('formats').appendTo('main')
-    
+
     const $dateFormatUS = $('<p>').text('US').addClass('change-links').click(function() {
         $romanDate.text(getDate('US'))
     }).appendTo($formats)
