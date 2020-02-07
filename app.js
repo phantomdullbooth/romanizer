@@ -34,14 +34,33 @@ $(() => {
     }
 
     // RETURN COMPLETE DATE
-    const getDate = () => {
+    const getDate = (format) => {
         const thisDate = new Date()
         const month = thisDate.getMonth()
         const date = thisDate.getDate()
         const year = thisDate.getFullYear()
 
-        return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
+        if (format === 'US') {
+            return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
+        } else if (format === 'UK') {
+            return romanizeDigits(date) + ' ' + months[month] + ' MM' + romanizeDigits(year)
+        } else {
+            return months[month] + ' ' + romanizeDigits(date) + ', MM' + romanizeDigits(year)
+        }
     }
 
     const $romanDate = $('<h1>').text(getDate()).appendTo('main')
+
+    // CHANGE DATA FORMATS
+    const $formats = $('<div>').addClass('formats').appendTo('main')
+    
+    const $dateFormatUS = $('<p>').text('US').addClass('change-links').click(function() {
+        $romanDate.text(getDate('US'))
+    }).appendTo($formats)
+
+    const $formatDivider = $('<p>').text(' / ').css('margin', '0 10px').appendTo($formats)
+
+    const $dateFormatUK =  $('<p>').text('UK').addClass('change-links').click(function() {
+        $romanDate.text(getDate('UK'))
+    }).appendTo($formats)
 })
