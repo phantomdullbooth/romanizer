@@ -1,7 +1,9 @@
-# romanizeMeCaptain()
-https://romanizemecaptain.netlify.com
+# romanizeMeCaptain
+https://romanizemecaptain.now.sh
 
-#1 — Get US date format with roman numerals instead of arabic numbers. Why? Good question.
+1. Get US date format with roman numerals instead of arabic numbers. Why? Good question.
 * example: DECEMBER XXIII, MMXIX
 
-* More "Roman" stuff to be added later
+
+### Februarius VII, MMXX
+* added ability to switch between US and UK date formats
