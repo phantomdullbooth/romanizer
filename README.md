@@ -1,4 +1,4 @@
-# romanizeMeCaptain
+# .romanize()
 https://romanizemecaptain.now.sh
 
 1. Get US date format with roman numerals instead of arabic numbers. Why? Good question.
